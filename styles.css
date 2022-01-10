@@ -1,0 +1,32 @@
+.p-red {
+  color: red;
+  font-size: 30px;
+}
+.p-red {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.box {
+  /* display: inline; */
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+  /* padding: 10px 20px 15px 5px; */
+}
+
+.image {
+  height: 200px;
+  width: 250px;
+}
