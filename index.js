@@ -154,7 +154,147 @@
 // // a = 7 , b = 6 , c = 5, d = 
 // console.log(sum(sum(7,6), 5))
 
-function sum(...numbers) {
-  console.log(numbers);
-}
-sum()
+// function sum(...numbers) {
+//   console.log(numbers);
+// }
+// sum()
+
+/**
+ *  
+ *  string
+ *  number
+ *  boolean
+ *  undefinded
+ *  null
+ */
+
+
+/**
+ * object
+ * array
+ */
+// const student = {
+//   hoTen: 'React Native',
+//   lop: '04'
+// }
+
+// const student_2 = {
+//   hoTen: 'RN',
+//   lop: '02',
+// }
+
+// const student_3 = {...student}
+// student_3.hoTen = 'RN'
+// student_3.lop = '02'
+// student_3.diaChi= 'TP.HCM'
+
+// const student_4 = {...student, diaChi: 'TP.HCM', hoTen: 'RN_Stu_4'}
+
+
+// console.log('student_2: ', student_2);
+// console.log('student_3: ', student_3);
+// console.log('student: ', student);
+// console.log('student_4: ', student_4);
+
+// const student = {
+//   hoTen: 'React Native',
+//   lop: '04',
+//   diaChi: {
+//     tenDuong: 'Le Van Sy',
+//     soNha: '20',
+//     quan: 'Tan Binh',
+//   }
+// }
+
+// const {
+//   hoTen: ten, 
+//   lop, 
+//   diaChi: {
+//     tenDuong, 
+//     soNha,
+//     quan
+//   }
+// } = student;
+// /**
+//  * const ten = student.hoTen
+//  * const soLop = student.lop
+//  * const address = student.diaChi
+//  */
+
+// console.log(ten);
+// console.log(lop);
+// // console.log(diaChi)
+
+// // const {tenDuong, soNha, quan} = diaChi
+
+// console.log('Ten duong: ', tenDuong);
+// console.log('soNha: ', soNha);
+// console.log('quan: ', quan);
+
+// const array = ['React Native', 'Android', 'iOS']
+// const [ , , b] = array
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// const tenLop = 'React Native';
+// const soLop = 5
+
+// console.log('Xin chào ' + tenLop + ' 0' + soLop);
+// console.log(`Xin chào ${tenLop} 0${soLop}`);
+
+// const thongTinLopHoc = {
+//   tenLop,
+//   soLop
+// }
+
+
+// console.log(thongTinLopHoc['tenLop']);
+
+
+// const arrayTech = ['React Native', 'Android', 'iOS']
+
+// for (let i in arrayTech) {
+//   console.log(i, arrayTech[i]);
+// }
+
+// const student = {
+//   hoTen: 'React Native',
+//   lop: '04',
+//   diaChi: {
+//     tenDuong: 'Le Van Sy',
+//     soNha: '20',
+//     quan: 'Tan Binh',
+//   }
+// }
+
+// const listStudent = [
+//   {...student, hoTen: 'Nguyen Van A', lop: 'React Native 01'},
+//   {...student, hoTen: 'Nguyen Van B', lop: 'React Native 02'},
+//   {...student, hoTen: 'Nguyen Van C', lop: 'React Native 03'},
+// ]
+
+// // for (let i in student) {
+// //   console.log(i, student[i]);
+// // }
+// for (let i of listStudent) {
+//   console.log(i);
+// }
+
+//hoTen: value
+
+import Student from './Student.js'
+import {StudentWithAddress} from './StudentWithAddress.js'
+
+const student_1 = new Student('Nguyen Van A', 19)
+const student_2 = new Student('Nguyen Van B', 18)
+const student_3 = new Student('Nguyen Van C', 20)
+
+student_1.getInfoStudent();
+student_2.getInfoStudent();
+student_3.getInfoStudent();
+
+
+const student_4 = new StudentWithAddress('Nguyen Van D', 21, 'Tp.HCM')
+student_4.getInfoStudent()
